@@ -1,0 +1,9 @@
+img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+}
+
+.graph {
+    padding-top: 10%
+}
