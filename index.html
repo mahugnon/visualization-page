@@ -43,7 +43,8 @@
                         <div class="col-md-8">
                             <form action="#">
                                 <div class="form-group">
-                                    <input type="search" name="search" id="search" placeholder="What are you looking for?">
+                                    <input type="search" name="search" id="search"
+                                        placeholder="What are you looking for?">
                                     <button type="submit" class="submit"><i class="icon-search-1"></i></button>
                                 </div>
                             </form>
@@ -54,10 +55,13 @@
             <div class="container">
                 <!-- Navbar Brand -->
                 <div class="navbar-header d-flex align-items-center justify-content-between">
-                    <!-- Navbar Brand --><a href="index.html" class="navbar-brand">Results of tickets database analyse in Moose
-            Environement</a>
+                    <!-- Navbar Brand --><a href="index.html" class="navbar-brand">Results of tickets database analyse
+                        in Moose
+                        Environement</a>
                     <!-- Toggle Button-->
-                    <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+                    <button type="button" data-toggle="collapse" data-target="#navbarcollapse"
+                        aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler"><span></span><span></span><span></span></button>
                 </div>
                 <!-- Navbar Menu -->
                 <div id="navbarcollapse" class="collapse navbar-collapse">
@@ -74,7 +78,8 @@
         </nav>
     </header>
     <!-- Hero Section-->
-    <section style="background: url(img/hero.jpg); background-size: cover; background-position: center center" class="hero">
+    <section style="background: url(img/hero.jpg); background-size: cover; background-position: center center"
+        class="hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
@@ -89,10 +94,16 @@
             <div class="row">
                 <div class="col-lg-8">
                     <h2 class="h3">Context</h2>
-                    <p class="text-big">The reengineering and reverse engineering of software systems is gaining importance in software industry, because the accelerated turnover in software companies creates legacy systems in a shorter period of time. Usually, these legacy
-                        systems are critical the software company business, model. Our case study is over <strong> 3 000.000 lines of code commercial software written in
-              PowerBuilder</strong>. The system is<strong> more than 20 years old</strong> and it's managed by a version control system. Because of the rising market demand, there is no team for system maintenance. As consequences developers burly improve
-                        or fix defects. Here we present our reengineering process. We use the model driving approach and analytics in Pharo Moose environment</p>
+                    <p class="text-big">The reengineering and reverse engineering of software systems is gaining
+                        importance in software industry, because the accelerated turnover in software companies creates
+                        legacy systems in a shorter period of time. Usually, these legacy
+                        systems are critical the software company business, model. Our case study is over <strong> 3
+                            000.000 lines of code commercial software written in
+                            PowerBuilder</strong>. The system is<strong> more than 20 years old</strong> and it's
+                        managed by a version control system. Because of the rising market demand, there is no team for
+                        system maintenance. As consequences developers burly improve
+                        or fix defects. Here we present our reengineering process. We use the model driving approach and
+                        analytics in Pharo Moose environment</p>
                 </div>
             </div>
         </div>
@@ -104,7 +115,9 @@
                 <div class="col-lg-8">
                     <h2 class="h3">Tickets database</h2>
                     <p class="text-normal">
-                        A ticket is related do a task to do. This task can be fixing a bug, writing documentation, adding a new feature, etc. We start our process by analyzing the tickets database over time. A ticket has the following characteristics:
+                        A ticket is related do a task to do. This task can be fixing a bug, writing documentation,
+                        adding a new feature, etc. We start our process by analyzing the tickets database over time. A
+                        ticket has the following characteristics:
                         <ol>
                             <li>the libraries it related to</li>
                             <li>the creation date</li>
@@ -122,7 +135,9 @@
                             <li>file it related to ( it can be found the source code comment)</li>
                             <li>The module is related to. </li>
                         </ol>
-                        To have a visual idea of the tickets database, we plot bugs tickets and evolution tickets in the same graphic for each PowerBuider library in the studied project. Here are some visualization samples </p>
+                        To have a visual idea of the tickets database, we plot bugs tickets and evolution tickets in the
+                        same graphic for each PowerBuider library in the studied project. Here are some visualization
+                        samples </p>
 
                 </div>
             </div>
@@ -144,10 +159,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-10"><img class="img-fluid" src="img/bugEvol.jpg" alt="Bugs and evolution tickets per library"></div>
+                    <div class="col-md-10"><img class="img-fluid" src="img/bugEvol.jpg"
+                            alt="Bugs and evolution tickets per library"></div>
                 </div>
                 <div class="text">
-                    <p class="lead"> Our observation across all libraries is that there are some libraries which have bugs tickets than evolutions <i>cot_uo</i> for example. Some of them have as many evolutions as bugs and others seem to not have bugs. This situation
+                    <p class="lead"> Our observation across all libraries is that there are some libraries which have
+                        bugs tickets than evolutions <i>cot_uo</i> for example. Some of them have as many evolutions as
+                        bugs and others seem to not have bugs. This situation
                         correlate with what developers actually think about the system.
                     </p>
                 </div>
@@ -160,30 +178,40 @@
                             <header class="post-header">
                                 <h2 class="h4">Visualization of time on bugs and evolutions tickets</h2>
                             </header>
-                            <p> To evaluate the situation over time, we plot average time of development on tickets, time to open and close tickets, time to test tickets for bugs and evolutions from 2004 to 2019. To smooth the graph we use moving average
-                                with a scale of two months before and two months after. We plot a regression line for each graph to approximate its behavior. </p>
+                            <p> To evaluate the situation over time, we plot average time of development on tickets,
+                                time to open and close tickets, time to test tickets for bugs and evolutions from 2004
+                                to 2019. To smooth the graph we use moving average
+                                with a scale of two months before and two months after. We plot a regression line for
+                                each graph to approximate its behavior. </p>
 
                         </div>
                     </div>
                 </div>
                 <div class="row ">
-                    <div class="col-md-10"><img class="img-fluid" src="img/openClose.jpg" alt="Time to close an opned ticket">
-                        <i>Moving average of time to open and close tickets. In blue graphic for evolution tickets and in red graphic for bugs tickets</i>
+                    <div class="col-md-10"><img class="img-fluid" src="img/openClose.jpg"
+                            alt="Time to close an opned ticket">
+                        <i>Moving average of time to open and close tickets. In blue graphic for evolution tickets and
+                            in red graphic for bugs tickets</i>
                     </div>
                 </div>
 
                 <div class="row graph">
-                    <div class="col-md-10"><img class="img-fluid" src="img/timeDev.jpg" alt="Time to close an opned ticket">
-                        <i>Moving average of time of development on tickets.In blue graphic for evolution tickets and in red graphic for bugs tickets</i>
+                    <div class="col-md-10"><img class="img-fluid" src="img/timeDev.jpg"
+                            alt="Time to close an opned ticket">
+                        <i>Moving average of time of development on tickets.In blue graphic for evolution tickets and in
+                            red graphic for bugs tickets</i>
                     </div>
                 </div>
                 <div class="row graph">
-                    <div class="col-md-10"><img class="img-fluid" src="img/timeTest.jpg" alt="Time to close an opned ticket">
-                        <i>Moving average of time to test tickets after development.In blue graphic for evolution tickets and in red graphic for bugs tickets</i>
+                    <div class="col-md-10"><img class="img-fluid" src="img/timeTest.jpg"
+                            alt="Time to close an opned ticket">
+                        <i>Moving average of time to test tickets after development.In blue graphic for evolution
+                            tickets and in red graphic for bugs tickets</i>
                     </div>
                 </div>
                 <div class="text">
-                    <p class="lead">As we can see developers tend to spend more and more time to make any modification in the system. However, testing team trend to less tested the system after modification.
+                    <p class="lead">As we can see developers tend to spend more and more time to make any modification
+                        in the system. However, testing team trend to less tested the system after modification.
                     </p>
                 </div>
             </div> <br />
@@ -198,43 +226,77 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-10"><img class="img-fluid" src="img/ticketsDashoad.png" alt="Lastest ticket dashoard output">
-                    <div class="text">
-                        <p class="lead">  The dashboard presents the time spent solving and testing tickets from 2004 until 2020. One can see a huge augmentation of development from 2019 to 2020, drop-in testing by the RC team and at a slight increase of testing time spent by developers team. This situation shows that regression tests aren't prioritized in 2019, and expose the system to regression bugs. </p>
-                    </div>
-                </div>
-            </div>
-
-              <!-- Post-->
-              <div class="row d-flex align-items-stretch">
-                <div class="text ">
-                    <div class="text-inner d-flex align-items-center">
-                        <div class="content">
-                            <header class="post-header">
-                                <h2 class="h4">Toward Duplication removing and God class refactoring</h2>
-                            </header>
-                            <p> After the first step of analysing the system situation. We realise that there is a reengineering need for the system to improve the situation. This said, we will first focus on a strategy to remove dupplication from the system, and decomposing god classes without regression.  </p>
+                    <div class="col-md-10"><img class="img-fluid" src="img/ticketsDashoad.png"
+                            alt="Lastest ticket dashoard output">
+                        <div class="text">
+                            <p class="lead"> The dashboard presents the time spent solving and testing tickets from 2004
+                                until 2020. One can see a huge augmentation of development from 2019 to 2020, drop-in
+                                testing by the RC team and at a slight increase of testing time spent by developers
+                                team. This situation shows that regression tests aren't prioritized in 2019, and expose
+                                the system to regression bugs. </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <h4 class="h4">God class refactoring Strategy</h4>
-              
-                 <div class="text">
-                    <p > God classes are classes in charge of too many responsabilities in a software system. Many publications describe how to detect them . But removing or refactoring them is not easy task.
-                         It need to be first planned <cite>Nicolas Anquetil et al. Decomposing God Classes at Siemens</cite>
-                    </p>
+
+                <!-- Post-->
+                <div class="row d-flex align-items-stretch">
+                    <div class="text ">
+                        <div class="text-inner d-flex align-items-center">
+                            <div class="content">
+                                <header class="post-header">
+                                    <h2 class="h4">Toward Duplication removing and God class refactoring</h2>
+                                </header>
+                                <p> After the first step of analysing the system situation. We realise that there is a
+                                    reengineering need for the system to improve the situation. This said, we will first
+                                    focus on a strategy to remove dupplication from the system, and decomposing god
+                                    classes without regression. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4 class="h4">God class refactoring Strategy</h4>
+
+                        <div class="text">
+                            <p> God classes are classes in charge of too many responsabilities in a software system.
+                                Many publications describe how to detect them . But removing or refactoring them is not
+                                easy task.
+                                It need to be first planned <cite> (Decomposing God Classes at Siemens Nicolas Anquetil
+                                    et al.)</cite>.
+                                This said we decided to focus on one god class it outgoing invocation and incoming
+                                invocation.
+                                We confronted this to the developer knowledge about the system .
+                            </p>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10"><img class="img-fluid" src="img/callTree.png"
+                                    alt="All reference to uo_taitement_liq_cal">
+                               
+                            </div>
+                            <div class="text">
+                                <p>They could directly see at a glance unsed references or unsed object.</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
-            </div> <br />
-            <!-- JavaScript files-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/popper.js/umd/popper.min.js">
-            </script>
-            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-            <script src="vendor/jquery.cookie/jquery.cookie.js">
-            </script>
-            <script src="vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
-            <script src="js/front.js"></script>
+            </div>
+        </div>
+    </section>
+    <br />
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js">
+    </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js">
+    </script>
+    <script src="vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/front.js"></script>
 </body>
 
 </html>
